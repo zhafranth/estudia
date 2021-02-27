@@ -33,14 +33,14 @@ const Home = () => {
       <Hero refKelas={RefKelas} />
       <About />
       <Benefit />
-      <Testimoni />
+      {/* <Testimoni /> */}
       <Kelas refKelas={RefKelas} />
-      <ListBlog
+      {/* <ListBlog
         data={dataBahasa}
         title="Kelas Bahasa Spanyol"
         to="kelas-bahasa-spanyols"
         height="350px"
-      />
+      /> */}
       <ListBlog
         data={dataTataBahasa}
         title="Tata Bahasa dan Kosatakata"

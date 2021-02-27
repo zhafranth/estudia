@@ -27,10 +27,10 @@ const Kelas = ({ refKelas }) => {
             <img src={ImgCard} alt="" />
           </ImgWrapper>
           <CardTitle>A1.1</CardTitle>
-          <Desc>
+          {/* <Desc>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam
             nulla repellendus voluptas cum mollitia placeat.
-          </Desc>
+          </Desc> */}
           <Time>
             <img src="" alt="" /> 30 Jam
           </Time>
@@ -47,10 +47,10 @@ const Kelas = ({ refKelas }) => {
             <img src={ImgCard} alt="" />
           </ImgWrapper>
           <CardTitle>A1.2</CardTitle>
-          <Desc>
+          {/* <Desc>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam
             nulla repellendus voluptas cum mollitia placeat.
-          </Desc>
+          </Desc> */}
           <Time>
             <img src="" alt="" /> 30 Jam
           </Time>
@@ -67,10 +67,10 @@ const Kelas = ({ refKelas }) => {
             <img src={ImgCard} alt="" />
           </ImgWrapper>
           <CardTitle>A1.3</CardTitle>
-          <Desc>
+          {/* <Desc>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam
             nulla repellendus voluptas cum mollitia placeat.
-          </Desc>
+          </Desc> */}
           <Time>
             <img src="" alt="" /> 30 Jam
           </Time>
