@@ -5,7 +5,6 @@ import {
   Benefit,
   Layout,
   About,
-  Testimoni,
   Kelas,
   ListBlog,
 } from "../../components/molecules";
@@ -19,7 +18,7 @@ const Home = () => {
 
   useEffect(() => {
     axios
-      .get("http://admin.estudiacourse.id:1337/kelas-bahasa-spanyols")
+      .get("http://admin.estudiacourse.id:1337/artikels")
       .then((res) => setDataBahasa(res.data))
       .catch((err) => console.log(err));
 
@@ -43,10 +42,11 @@ const Home = () => {
       /> */}
       <ListBlog
         data={dataTataBahasa}
-        title="Tata Bahasa dan Kosatakata"
+        title="Tata Bahasa dan Kosakata"
         to="tata-bahasa-dan-kosakatas"
         height="350px"
       />
+      <ListBlog data={dataBahasa} title="Blog" to="artikel" height="350px" />
     </Layout>
   );
 };

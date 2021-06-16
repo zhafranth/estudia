@@ -18,11 +18,8 @@ const index = ({ refKelas }) => {
   return (
     <MainHero>
       <HeroContent>
-        <TitleHero>Spanish Without Limits</TitleHero>
-        <DescHero>
-          Belajar Bahasa Spanyol tanpa batas Cara mudah dan murah untuk belajar
-          bahasa Spanyol
-        </DescHero>
+        <TitleHero> Belajar Bahasa Spanyol tanpa batas</TitleHero>
+        <DescHero>Cara mudah dan murah untuk belajar bahasa Spanyol</DescHero>
         <Button onClick={handleShow}>Mulai Belajar</Button>
       </HeroContent>
       <HeroImage>

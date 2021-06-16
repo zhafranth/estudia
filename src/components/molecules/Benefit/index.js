@@ -34,7 +34,6 @@ const Benefit = () => {
             <ItemBenefit key={item.id}>
               <Point>0{index + 1}</Point>
               <TitleBenefit>{item.title}</TitleBenefit>
-              <DescBenefit>{item.desc}</DescBenefit>
             </ItemBenefit>
           ))}
       </WrapperBenefit>

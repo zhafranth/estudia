@@ -5,7 +5,6 @@ import { Layout } from "../../components/molecules";
 import Reactmarkdown from "react-markdown";
 
 // Images
-import ImgCover from "../../assets/Images/cover-detail.png";
 import axios from "axios";
 
 const DetailBlog = (props) => {
@@ -28,7 +27,7 @@ const DetailBlog = (props) => {
       <ImgWrapper>
         <img
           src={`http://admin.estudiacourse.id:1337${
-            data.image != undefined && data.image[0].url
+            data.image !== undefined && data.image[0].url
           }`}
           alt="cover blog"
           className="img-cover"

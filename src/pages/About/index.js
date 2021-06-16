@@ -18,7 +18,7 @@ const AboutPage = () => {
   return (
     <Layout primary={true}>
       <Hero>
-        <img src={ImgHero} alt="image hero" className="img-cover" />
+        <img src={ImgHero} alt="image hero about" className="img-cover" />
       </Hero>
       <About>
         <Title>

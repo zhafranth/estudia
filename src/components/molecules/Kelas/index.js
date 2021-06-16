@@ -13,6 +13,9 @@ import {
 
 // Images
 import ImgCard from "../../../assets/Images/cover-card.png";
+import Kelas1 from "../../../assets/Images/benefit1.jpeg";
+import Kelas2 from "../../../assets/Images/benefit2.jpeg";
+import Kelas3 from "../../../assets/Images/benefit3.jpeg";
 
 const Kelas = ({ refKelas }) => {
   return (
@@ -24,7 +27,7 @@ const Kelas = ({ refKelas }) => {
       <KelasWrapper>
         <Card>
           <ImgWrapper>
-            <img src={ImgCard} alt="" />
+            <img src={Kelas1} alt="" />
           </ImgWrapper>
           <CardTitle>A1.1</CardTitle>
           {/* <Desc>
@@ -44,7 +47,7 @@ const Kelas = ({ refKelas }) => {
         </Card>
         <Card>
           <ImgWrapper>
-            <img src={ImgCard} alt="" />
+            <img src={Kelas2} alt="" />
           </ImgWrapper>
           <CardTitle>A1.2</CardTitle>
           {/* <Desc>
@@ -64,7 +67,7 @@ const Kelas = ({ refKelas }) => {
         </Card>
         <Card>
           <ImgWrapper>
-            <img src={ImgCard} alt="" />
+            <img src={Kelas3} alt="" />
           </ImgWrapper>
           <CardTitle>A1.3</CardTitle>
           {/* <Desc>

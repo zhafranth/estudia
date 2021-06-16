@@ -17,9 +17,9 @@ const Blog = () => {
       .catch((err) => console.log(err));
   }, [blogId]);
   const handleTitle = () => {
-    if (blogId == "tata-bahasa-dan-kosakata") {
+    if (blogId === "tata-bahasa-dan-kosakata") {
       return "Tata Bahasa dan Kosakata";
-    } else if (blogId == "kelas-bahasa-spanyol") {
+    } else if (blogId === "kelas-bahasa-spanyol") {
       return "Kelas Bahasa Spanyol";
     } else {
       return "Artikel Estudia";
