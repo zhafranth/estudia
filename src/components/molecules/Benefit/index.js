@@ -29,13 +29,30 @@ const Benefit = () => {
         Kenapa Harus <img src={Logo} alt="logo Estudia" />
       </Title>
       <WrapperBenefit>
-        {data.length != 0 &&
-          data.map((item, index) => (
-            <ItemBenefit key={item.id}>
-              <Point>0{index + 1}</Point>
-              <TitleBenefit>{item.title}</TitleBenefit>
-            </ItemBenefit>
-          ))}
+        <ItemBenefit>
+          <Point>1</Point>
+          <TitleBenefit>Praktis dan Flexibel</TitleBenefit>
+          <DescBenefit>
+            Dengan belajar melalui platform Zoom, kamu bisa belajar dari mana
+            aja.
+          </DescBenefit>
+        </ItemBenefit>
+        <ItemBenefit>
+          <Point>2</Point>
+          <TitleBenefit>Murah dan Hemat</TitleBenefit>
+          <DescBenefit>
+            Harga miring dengan kualitas yang bisa dibandingkan dengan kursus
+            bahasa Spanyol lainnya.
+          </DescBenefit>
+        </ItemBenefit>
+        <ItemBenefit>
+          <Point>3</Point>
+          <TitleBenefit>Mentor Terbaik</TitleBenefit>
+          <DescBenefit>
+            Mentor Estudia sudah berpengalaman lebih dari 5 tahun dengan murid
+            dari Indonesia maupun negara lain.
+          </DescBenefit>
+        </ItemBenefit>
       </WrapperBenefit>
     </MainBenefit>
   );

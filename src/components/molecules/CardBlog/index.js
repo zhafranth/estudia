@@ -8,11 +8,7 @@ const Card = ({ title, image, highlight }) => {
   return (
     <MainCard>
       <ImgWrapper>
-        <img
-          src={`http://admin.estudiacourse.id:1337${image}`}
-          alt="image "
-          className="img-cover"
-        />
+        <img src={image} alt="image " className="img-cover" />
       </ImgWrapper>
       <Title>{title}</Title>
       <Desc>{highlight && highlight}</Desc>

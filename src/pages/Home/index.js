@@ -1,5 +1,6 @@
 import axios from "axios";
 import React, { useEffect, useState, useRef } from "react";
+import data from "../../Json/db.json";
 import {
   Hero,
   Benefit,
@@ -41,12 +42,12 @@ const Home = () => {
         height="350px"
       /> */}
       <ListBlog
-        data={dataTataBahasa}
+        data={data.blog}
         title="Tata Bahasa dan Kosakata"
         to="tata-bahasa-dan-kosakatas"
         height="350px"
       />
-      <ListBlog data={dataBahasa} title="Blog" to="artikel" height="350px" />
+      <ListBlog data={data.blog} title="Blog" to="blog" height="350px" />
     </Layout>
   );
 };

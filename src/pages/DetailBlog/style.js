@@ -16,13 +16,8 @@ export const ImgWrapper = styled.div`
   }
 `;
 
-export const Desc = styled.p`
+export const Desc = styled.div`
   padding: 0 12vw;
-  overflow: hidden;
-  img {
-    width: 100%;
-    height: auto;
-  }
   @media screen and (max-width: 768px) {
     text-align: justify;
   }

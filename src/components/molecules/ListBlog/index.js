@@ -14,7 +14,7 @@ const Index = ({ data, to, title, height }) => {
               <Card
                 key={index}
                 title={item.title}
-                image={item.image[0].url}
+                image={item.image}
                 highlight={item.highlight}
               />
             </Link>

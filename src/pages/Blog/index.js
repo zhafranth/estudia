@@ -25,6 +25,7 @@ const Blog = () => {
       return "Artikel Estudia";
     }
   };
+  // console.log("apake");
   return (
     <Layout primary>
       <HeroBlog title={handleTitle()} />

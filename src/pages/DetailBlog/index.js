@@ -2,42 +2,27 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { ImgWrapper, Desc, Title } from "./style";
 import { Layout } from "../../components/molecules";
-import Reactmarkdown from "react-markdown";
-
-// Images
-import axios from "axios";
+import parse from "html-react-parser";
+import data from "../../Json/db.json";
 
 const DetailBlog = (props) => {
-  const [data, setData] = useState([]);
-
   const { detailArtikel, artikel } = useParams();
-
-  // getData
+  const [dataDetail, setDataDetail] = useState({});
   useEffect(() => {
-    axios
-      .get(`http://admin.estudiacourse.id:1337/${artikel}`)
-      .then((res) => {
-        const data = res.data.find((item) => item.slug === detailArtikel);
-        setData(data);
-      })
-      .catch((err) => console.log(err));
+    const tempData = data[artikel]?.filter(
+      (item) => item.slug === detailArtikel
+    );
+    setDataDetail(tempData[0]);
   }, []);
+  console.log(dataDetail);
   return (
     <Layout primary>
       <ImgWrapper>
-        <img
-          src={`http://admin.estudiacourse.id:1337${
-            data.image !== undefined && data.image[0].url
-          }`}
-          alt="cover blog"
-          className="img-cover"
-        />
+        <img src={dataDetail?.image} alt="cover blog" className="img-cover" />
       </ImgWrapper>
 
-      <Title>{data?.title}</Title>
-      <Desc>
-        <Reactmarkdown>{data?.content}</Reactmarkdown>
-      </Desc>
+      <Title>{dataDetail?.title}</Title>
+      <Desc>{parse(`${dataDetail?.desc}`)}</Desc>
     </Layout>
   );
 };
