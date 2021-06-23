@@ -42,9 +42,9 @@ const Home = () => {
         height="350px"
       /> */}
       <ListBlog
-        data={data.blog}
+        data={data.bahasa}
         title="Tata Bahasa dan Kosakata"
-        to="tata-bahasa-dan-kosakatas"
+        to="bahasa"
         height="350px"
       />
       <ListBlog data={data.blog} title="Blog" to="blog" height="350px" />

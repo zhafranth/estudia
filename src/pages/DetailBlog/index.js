@@ -14,7 +14,6 @@ const DetailBlog = (props) => {
     );
     setDataDetail(tempData[0]);
   }, []);
-  console.log(dataDetail);
   return (
     <Layout primary>
       <ImgWrapper>

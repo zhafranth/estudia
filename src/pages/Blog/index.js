@@ -2,34 +2,30 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { Layout, ListBlog } from "../../components/molecules";
 import HeroBlog from "../../components/molecules/HeroBlog";
-import axios from "axios";
-
+import data from "../../Json/db.json";
 const Blog = () => {
-  const [data, setData] = useState([]);
+  const [listPost, setListPost] = useState([]);
+  const [title, setTitle] = useState("");
   const { blogId } = useParams();
 
-  useEffect(() => {
-    axios
-      .get(`http://admin.estudiacourse.id:1337/${blogId}s`)
-      .then((res) => {
-        setData(res.data);
-      })
-      .catch((err) => console.log(err));
-  }, [blogId]);
-  const handleTitle = () => {
-    if (blogId === "tata-bahasa-dan-kosakata") {
-      return "Tata Bahasa dan Kosakata";
-    } else if (blogId === "kelas-bahasa-spanyol") {
-      return "Kelas Bahasa Spanyol";
+  const handleTitle = (blog) => {
+    if (blog === "bahasa") {
+      setListPost(data.bahasa);
+      setTitle("Tata Bahasa dan Kosakata");
+    } else if (blog === "kelas-bahasa-spanyol") {
+      setTitle("Kelas Bahasa Spanyol");
     } else {
-      return "Artikel Estudia";
+      setListPost(data.blog);
+      setTitle("Artikel Estudia");
     }
   };
-  // console.log("apake");
+  useEffect(() => {
+    handleTitle(blogId);
+  }, [blogId]);
   return (
     <Layout primary>
-      <HeroBlog title={handleTitle()} />
-      <ListBlog data={data} to={`${blogId}s`} height="53vh" />
+      <HeroBlog title={title} />
+      <ListBlog data={listPost} to={`${blogId}`} height="53vh" />
     </Layout>
   );
 };

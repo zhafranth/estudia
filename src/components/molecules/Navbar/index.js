@@ -41,7 +41,7 @@ const Navbar = ({ primary }) => {
         </MenuItem>
         <MenuItem>
           <Link
-            to="/artikel/tata-bahasa-dan-kosakata"
+            to="/artikel/bahasa"
             className={`${primary ? "primary link" : "link"}`}
           >
             Tata Bahasa dan Kosakata
@@ -49,7 +49,7 @@ const Navbar = ({ primary }) => {
         </MenuItem>
         <MenuItem>
           <Link
-            to="/artikel/artikel"
+            to="/artikel/blog"
             className={`${primary ? "primary link" : "link"}`}
           >
             Blog
