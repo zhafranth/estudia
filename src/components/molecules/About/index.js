@@ -3,7 +3,6 @@ import { MainAbout, ImgWrapper, AboutMeta, Title, Desc } from "./style";
 
 // Image
 import ImgAbout from "../../../assets/Images/About.png";
-import BgImgAbout from "../../../assets/Images/BgAbout.png";
 
 const About = () => {
   return (

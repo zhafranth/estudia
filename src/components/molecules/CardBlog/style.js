@@ -1,7 +1,6 @@
 import styled from "styled-components/macro";
 
 export const MainCard = styled.div`
-  /* height: 50vh; */
   box-sizing: border-box;
   padding: 12px;
   border-radius: 10px;
@@ -22,12 +21,10 @@ export const MainCard = styled.div`
 `;
 export const ImgWrapper = styled.div`
   width: 100%;
-  height: 180px;
-  border-radius: 10px;
-  overflow: hidden;
   .img-cover {
+    border-radius: 10px;
     width: 100%;
-    height: 100%;
+    height: auto;
     object-fit: cover;
   }
 `;

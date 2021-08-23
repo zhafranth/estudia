@@ -17,6 +17,7 @@ export const ImgWrapper = styled.div`
 `;
 
 export const Desc = styled.div`
+  line-height: 2rem;
   padding: 0 12vw;
   @media screen and (max-width: 768px) {
     text-align: justify;
