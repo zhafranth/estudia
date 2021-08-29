@@ -8,6 +8,7 @@ import {
   About,
   Kelas,
   ListBlog,
+  ProfilePengajar,
 } from "../../components/molecules";
 
 // Component
@@ -33,8 +34,9 @@ const Home = () => {
       <Hero refKelas={RefKelas} />
       <About />
       <Benefit />
+      <ProfilePengajar />
       {/* <Testimoni /> */}
-      <Kelas refKelas={RefKelas} />
+      {/* <Kelas refKelas={RefKelas} /> */}
       {/* <ListBlog
         data={dataBahasa}
         title="Kelas Bahasa Spanyol"
@@ -47,7 +49,7 @@ const Home = () => {
         to="bahasa"
         height="350px"
       />
-      <ListBlog data={data.blog} title="Blog" to="blog" height="350px" />
+      <ListBlog data={data.blogHome} title="Blog" to="blog" height="350px" />
     </Layout>
   );
 };

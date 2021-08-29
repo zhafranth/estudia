@@ -9,6 +9,7 @@ import Kelas from "./Kelas";
 import Card from "./CardBlog";
 import ListBlog from "./ListBlog";
 import HeroBlog from "./HeroBlog";
+import ProfilePengajar from "./ProfilePengajar";
 
 export {
   Hero,
@@ -22,4 +23,5 @@ export {
   Card,
   ListBlog,
   HeroBlog,
+  ProfilePengajar,
 };
